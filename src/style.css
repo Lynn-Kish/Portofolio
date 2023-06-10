@@ -12,10 +12,10 @@
     background-color: rgb(97, 32, 46);
   }
 
-  header{
-    display: flex;
-    justify-content: center;
-    align-items: right;
+  .id{
+    display: inline-block;
+    justify-content:justify;
+    text-align: right;
     margin-bottom: 30px;
   }
 
