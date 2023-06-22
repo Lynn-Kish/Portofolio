@@ -13,34 +13,64 @@
   }
 
   header {
-    background-color: none;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-}
+    background-color: #f2f2f2;
+    padding: 5px;
+    text-align: center;
+  
+  }
 
-.hamburger {
-    display: none; /* Hide hamburger icon for larger screens */
-}
+  /* Style for the heading (h2) */
+  h2 {
+    font-size: 25px;
+    color:#191765;
+    margin-bottom: 20px;
+    text-align: left;
+  }
 
-.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  /* Style for the navigation */
+  nav {
     display: flex;
-    justify-content: flex-end;
-}
+    justify-content: right;
+    align-items: center;
+  }
 
-.menu li {
+  /* Style for the hamburger icon */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  
+  /* Style for the menu list */
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .menu li {
     margin: 0 10px;
-}
+  }
 
-.menu li a {
+  .menu li a {
     text-decoration: none;
-    color: #fcf8f8;
-}
+    color: #191765;
+    font-size: 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu li a:hover {
+    background-color: #000;
+    color: #191765;
+  }
 
 main {
   display: flex;
@@ -52,7 +82,7 @@ main {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 40px;
   color: #fdfcfc;
   margin-bottom: 10px;
 }
@@ -88,7 +118,7 @@ p {
 
 h2 {
   font-size: 24px;
-  color: #333;
+  color: #fdfcfc;
   margin-bottom: 10px;
 }
 
@@ -101,7 +131,7 @@ ul {
 li {
   margin-bottom: 5px;
   font-size: 18px;
-  color: #777;
+  color: #fdfcfc;
 }
 p .arrow {
   display: inline-block;
