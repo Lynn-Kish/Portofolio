@@ -79,48 +79,7 @@
     padding: 20px;
   }
 
-  .view {
-    display: inline-flex;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    text-align: center;
-  }
 
-  /* Style for the headings */
-  h2 {
-    font-size: 25px;
-    color: #333333;
-    margin-bottom: 10px;
-  }
-
-  /* Style for the list items */
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-  }
-
-  ul li {
-    font-size: 16px;
-    color: #666666;
-    margin-bottom: 5px;
-  }
-
-
-  /* Style for the headings */
-  h1, p {
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-
-  /* Style for the paragraphs */
-  p {
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 20px;
-  }
 p .arrow {
   display: inline-block;
   width: 0;
