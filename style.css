@@ -87,10 +87,17 @@
   }
 
   /* Style for the headings */
-  h2 {
+  .view h2 {
+    display: flex;
+    width: 107px;
+    height: 16px;
+    flex-direction: column;
+    text-align: center;
+    color: #9390FF;
     font-size: 25px;
-    color: #333333;
-    margin-bottom: 10px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 29.333px;
   }
 
   /* Style for the list items */
@@ -98,7 +105,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
 
   ul li {
@@ -121,6 +128,7 @@
     color: #fff;
     margin-bottom: 20px;
   }
+
 p .arrow {
   display: inline-block;
   width: 0;
