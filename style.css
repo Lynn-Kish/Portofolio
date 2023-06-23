@@ -65,8 +65,9 @@
     text-decoration: none;
     color: #191765;
     font-size: 25px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 0 6px rgba(0, 0, 0,0.2 );
+    border-radius: 15px;
+    transition: background-color 0.2s ease-in-out;
   }
 
   .menu li a:hover {
@@ -74,107 +75,87 @@
     color: #191765;
   }
 
-  main {
+  .main {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
   }
 
-  .view {
-    display: inline-flex;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    text-align: center;
+  /* Style for the main heading */
+  .main h1 {
+    font-size: 90px;
+    color: #fff;
+    margin-bottom: 20px;
   }
 
-  /* Style for the headings */
-  .view h2 {
-    display: flex;
-    width: 107px;
-    height: 16px;
-    flex-direction: column;
-    text-align: center;
-    color: #9390FF;
-    font-size: 25px;
-    font-family: Roboto;
-    font-weight: 700;
-    line-height: 29.333px;
+  /* Style for the paragraph */
+  .main p:not(:first-child) {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
   }
+ 
+  /* style for footer */
+  .footer {
+    padding: 30px;
+    text-align: center;
+}
 
-  /* Style for the list items */
-  ul {
+.footer__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+
+.footer__content {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.footer__content ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
-  }
-
-  ul li {
-    font-size: 16px;
-    color: #666666;
-    margin-bottom: 5px;
-  }
-
-
-  /* Style for the headings */
-  h1, p {
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-
-  /* Style for the paragraphs */
-  p {
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-
-p .arrow {
-  display: inline-block;
-  width: 0;
-  height: 0; 
-  border-top: 5px solid #fdfcfc;
 }
 
+.footer__content ul li {
+    color: #fff;
+}
+  
 .link-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  justify-content: center; /* Center align the link list vertically */
+  padding: 30px;
+}
+
+.link-list ul {
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
+  margin: 0;
+  
 }
 
 .link-list li {
-    margin-right: 20px;
+  margin-bottom: 10px; /* Adjust the spacing between each link */
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: top;
 }
 
-.link-with-icon {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #f7f4f4;
-    font-size: 18px;
+.link-list a {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center align icon and text vertically */
+  text-decoration: none;
+  color: #000; /* Set link text color */
 }
 
-.link-with-icon i {
-    margin-right: 5px;
+.link-list a:hover {
+  color: #fff; 
+  border: 10px; /* Set link text color on hover */
 }
 
-.container {
-  display: flex;
-  align-items: center; /* Align items vertically */
+.link-list i {
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
 }
-
-.text {
-  flex: 1; /* Take up remaining space */
-  margin-right: 20px; /* Add some spacing between text and image */
-}
-
-.image {
-  flex: 1; /* Take up remaining space */
-}
-
-
-  
