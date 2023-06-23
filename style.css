@@ -162,15 +162,16 @@ svg {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 line {
-  stroke: black;
+  stroke: rgba(100, 99, 105, 1);
   stroke-width: 1;
+
 }
   
+/* link's style */
 .link-list {
   display: flex;
   justify-content: center; /* Center align the link list vertically */
@@ -196,14 +197,12 @@ line {
   display: flex; /* Align icon and text horizontally */
   align-items: center; /* Center align icon and text vertically */
   text-decoration: none;
-  color: #000; /* Set link text color */
+  color: #fff;  /* Set link text color */
+  
 }
-
-.link-list a:hover {
-  color: #fff; 
-  border: 10px; /* Set link text color on hover */
-}
-
 .link-list i {
   margin-right: 5px; /* Adjust the spacing between the icon and text */
+  width: 18px;
+  height: 20px;
+  flex-shrink: 0;
 }
