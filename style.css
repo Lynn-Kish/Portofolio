@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+  }
+
+  body{
+    line-height: 1.6;
+    background-color: #191765;
+  }
+
+  header {
+    background-color: #f2f2f2;
+    padding: 5px;
+    text-align: center;
+    
+  
+  }
+
+  /* Style for the heading (h2) */
+  h2 {
+    font-size: 25px;
+    color:#191765;
+    margin-bottom: 20px;
+    text-align: left;
+    
+  }
+
+  /* Style for the navigation */
+  nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  /* Style for the hamburger icon */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  
+  /* Style for the menu list */
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .menu li {
+    margin: 0 10px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #191765;
+    font-size: 25px;
+    box-shadow: 0 0 6px rgba(0, 0, 0,0.2 );
+    border-radius: 15px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .menu li a:hover {
+    background-color: #000;
+    color: #191765;
+  }
+
+  .main {
+    text-align: center;
+    padding: 50px;
+  }
+
+  /* Style for the main heading */
+  .main h1 {
+    font-size: 90px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  /* Style for the paragraph */
+  .main p:not(:first-child) {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+ 
+  /* style for footer */
+  .footer {
+    padding: 30px;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+
+.footer__content {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.footer__content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__content ul li {
+    color: #fff;
+}
+  
+.link-list {
+  display: flex;
+  justify-content: center; /* Center align the link list vertically */
+  padding: 30px;
+}
+
+.link-list ul {
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
+  margin: 0;
+  
+}
+
+.link-list li {
+  margin-bottom: 10px; /* Adjust the spacing between each link */
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: top;
+}
+
+.link-list a {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center align icon and text vertically */
+  text-decoration: none;
+  color: #000; /* Set link text color */
+}
+
+.link-list a:hover {
+  color: #fff; 
+  border: 10px; /* Set link text color on hover */
+}
+
+.link-list i {
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
