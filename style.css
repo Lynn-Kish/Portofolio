@@ -82,16 +82,32 @@
 
   /* Style for the main heading */
   .main h1 {
-    font-size: 90px;
-    color: #fff;
+    color: var(--theme-4-primary-2, #7D73FC);
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 48px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0.37px;
   }
 
   /* Style for the paragraph */
-  .main p:not(:first-child) {
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 20px;
+  .main h3:not(:first-child) {
+    color: var(--theme-4-primary-4, #EDECFF);
+    text-align: center;
+    font-size: 32px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 44px;
+  }
+
+  .main p:not(:first-child){
+    color: var(--theme-4-neutral-7, #C8C8D4);
+    text-align: center;
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 28px;
   }
  
   /* style for footer */
@@ -101,9 +117,12 @@
 }
 
 .footer__title {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #fff;
+  color: var(--theme-4-primary-3, #9490FF);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.36px;
     
 }
 
@@ -120,7 +139,10 @@
 }
 
 .footer__content ul li {
-    color: #fff;
+  color: var(--theme-4-neutral-10, #F5F5FF);
+  font-size: 15px;
+  font-family: Roboto;
+  line-height: 24px;
 }
   
 .link-list {
