@@ -55,18 +55,6 @@
     align-items: center;
   }
 
-  /* Style for the hamburger icon */
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-  }
-
-  
   /* Style for the menu list */
   .menu {
     list-style: none;
@@ -83,7 +71,7 @@
   .menu li a {
     color: #FFF;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     font-family: Roboto;
     font-weight: 500;
     line-height: 20px;
