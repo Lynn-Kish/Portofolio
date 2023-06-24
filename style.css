@@ -12,12 +12,21 @@
     background-color: #191765;
   }
 
-  header {
-    padding: 5px;
-    text-align: center;
-    
-  
+  #time {
+    padding: 20px;
+    text-align: left;
   }
+
+  #time h1 {
+    color: var(--color-4100, #FFF);
+    text-align: left;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+  }
+
+ 
 
   /* Style for the heading (h2) */
   h2 {
@@ -157,7 +166,7 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 100px;
   height: 100vh;
   
 }
@@ -165,7 +174,6 @@ svg {
 line {
   stroke: rgba(100, 99, 105, 1);
   stroke-width: 1;
-
 }
   
 /* link's style */
