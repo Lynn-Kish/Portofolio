@@ -12,21 +12,6 @@
     background-color: #191765;
   }
 
-  #time {
-    padding: 20px;
-    text-align: left;
-    margin: 20px;
-  }
-
-  #time h1 {
-    color: var(--color-4100, #FFF);
-    text-align: left;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 500;
-    letter-spacing: -0.28px;
-  }
-
   /* Style for the heading (h2) */
   h2 {
     color: var(--theme-3-neutral-11, #FFF);
@@ -106,12 +91,12 @@
   }
  
   /* style for footer */
-  .footer {
+  .skills {
     padding: 30px;
     text-align: center;
 }
 
-.footer__title {
+.skills__title {
   color: var(--theme-4-primary-3, #9490FF);
   font-size: 12px;
   font-family: Roboto;
@@ -121,19 +106,19 @@
     
 }
 
-.footer__content {
+.skills__content {
     display: inline-block;
     margin-right: 30px;
     vertical-align: top;
 }
 
-.footer__content ul {
+.skills__content ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer__content ul li {
+.skills__content ul li {
   color: var(--theme-4-neutral-10, #F5F5FF);
   font-size: 15px;
   font-family: Roboto;
@@ -212,7 +197,7 @@ line {
 .arrow p {
   margin: 0;
   font-size: 24px;
-  color: #fff;
+  color: #7D73FC;
   padding: 120px 0px;
   flex-direction: column;
 
