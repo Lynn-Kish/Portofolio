@@ -26,16 +26,6 @@
     letter-spacing: -0.28px;
   }
 
-   /* Custom styles for the common icon class */
-  .common-icon {
-    color: #fff;
-    font-size: 15px;
-    top: 10px;
-    right: 10px; 
-    display: inline;
-    align-items: right;
-  }
-
   /* Style for the heading (h2) */
   h2 {
     color: var(--theme-3-neutral-11, #FFF);
