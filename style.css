@@ -15,6 +15,7 @@
   #time {
     padding: 20px;
     text-align: left;
+    margin: 20px;
   }
 
   #time h1 {
@@ -35,6 +36,7 @@
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.54px;
+    padding: 20px;
     
   }
 
@@ -52,6 +54,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    padding: 20px;
   }
 
   .menu li {
