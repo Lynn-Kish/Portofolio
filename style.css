@@ -12,12 +12,6 @@
     background-color: #191765;
   }
 
-  /* Style for the heading (h2) */
-  h2 {
-   
-    
-  }
-
   .logo {
     display: flex;
     align-items: flex-start;
@@ -40,8 +34,7 @@
     letter-spacing: 0.54px;
     padding: 20px;
   }
-  
-  
+
 
   /* Style for the navigation */
   nav {
