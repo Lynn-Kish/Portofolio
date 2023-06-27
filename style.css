@@ -14,16 +14,34 @@
 
   /* Style for the heading (h2) */
   h2 {
+   
+    
+  }
+
+  .logo {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .logo-image {
+    width: 50px; /* Adjust the width as per your logo dimensions */
+    height: auto; /* Adjust the height proportionally */
+    margin-left: 10px; /* Add spacing between the logo and text */
+  }
+  
+  .logo-text {
+    margin: 0;
     color: var(--theme-3-neutral-11, #FFF);
-    text-align: left;
+    text-align: flex-start;
     font-size: 18px;
     font-family: Roboto;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.54px;
     padding: 20px;
-    
   }
+  
+  
 
   /* Style for the navigation */
   nav {
@@ -190,7 +208,6 @@ line {
   width: 18px;
   height: 20px;
   flex-shrink: 0;
-  size: 30px;
 }
 
 /* style for the arrow */
