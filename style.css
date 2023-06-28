@@ -12,63 +12,25 @@
     background-color: #191765;
   }
 
-  .logo {
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .logo-image {
-    width: 50px; /* Adjust the width as per your logo dimensions */
-    height: auto; /* Adjust the height proportionally */
-    margin-left: 10px; /* Add spacing between the logo and text */
-  }
-  
-  .logo-text {
-    margin: 0;
-    color: var(--theme-3-neutral-11, #FFF);
-    text-align: flex-start;
-    font-size: 18px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.54px;
-    padding: 20px;
-  }
-
-
-  /* Style for the navigation */
-  nav {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-  }
-
-  /* Style for the menu list */
   .menu {
-    list-style: none;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin-top: 20px;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 30px;
   }
-
-  .menu li {
-    margin: 0 10px;
-  }
-
-  .menu li a {
-    color: #FFF;
-    text-align: center;
-    font-size: 25px;
-    font-family: Roboto;
+  
+  .menu-text {
+    font-size: 30px;
+    color: var(--theme-3-neutral-11, #FFF);
     font-weight: 500;
-    line-height: 20px;
+    font-family: Roboto;
+    text-decoration: none;
   }
 
   .main {
     text-align: center;
-    padding: 50px;
+    padding: 30px;
   }
 
   /* Style for the main heading */
@@ -76,131 +38,82 @@
     color: var(--theme-4-primary-2, #7D73FC);
     margin-bottom: 20px;
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     font-family: Roboto;
     font-weight: 700;
-    line-height: 72px;
-    letter-spacing: 0.37px;
   }
 
   /* Style for the paragraph */
   .main h3:not(:first-child) {
     color: var(--theme-4-primary-4, #EDECFF);
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
     font-family: Roboto;
     font-weight: 500;
-    line-height: 44px;
   }
 
-  .main p:not(:first-child){
+  .main p{
     color: var(--theme-4-neutral-7, #C8C8D4);
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-family: Roboto;
-    line-height: 28px;
+    margin-top: 30px;
+  }
+
+  .line {
+    width: 100%;
+    background-color: #646369;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
  
   /* style for skills */
   .skills {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 24px;
     padding: 30px;
 }
 
+.skills__content {
+  width: 40%;
+}
+
 .skills__title {
   color: var(--theme-4-primary-3, #9490FF);
-  font-size: 12px;
+  font-size: 20px;
   font-family: Roboto;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.36px;
+  margin-bottom: 30px;
+  text-align: start;
     
 }
 
-.skills__content {
-    display: inline-block;
-    margin-right: 30px;
-    vertical-align: top;
-}
-
-.skills__content ul {
+li {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-.skills__content ul li {
-  color: var(--theme-4-neutral-10, #F5F5FF);
+.skills__content li {
+  color: #F5F5FF;
   font-size: 15px;
   font-family: Roboto;
-  line-height: 24px;
-}
-/* line's style */
-
-.container {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100vh;
-  
-}
-
-line {
-  stroke: rgba(100, 99, 105, 1);
-  stroke-width: 1;
+  text-align: start;
 }
   
 /* link's style */
 .link-list {
   display: flex;
-  justify-content: center; /* Center align the link list vertically */
-  padding: 30px;
+  align-items: center;
+  justify-content: space-between; 
+  margin: auto;
+  width: 40%;
 }
 
-.link-list ul {
-  list-style-type: none; /* Remove default list bullet points */
-  padding: 0;
-  margin: 0;
-  
-  
-}
-
-.link-list li {
-  margin-bottom: 10px; /* Adjust the spacing between each link */
-  vertical-align: top;
-  display: inline-block;
-  margin-right: 30px;
-  vertical-align: top;
- 
-}
-
-.link-list a {
-  display: flex; /* Align icon and text horizontally */
-  align-items: center; /* Center align icon and text vertically */
-  text-decoration: none;
-  color: #fff;  /* Set link text color */
-  
-  
-}
-.link-list i {
-  margin-right: 5px; /* Adjust the spacing between the icon and text */
-  width: 18px;
-  height: 20px;
-  flex-shrink: 0;
+i {
+  color: #F5F5FF;
 }
 
 /* style for the arrow */
@@ -209,18 +122,16 @@ line {
   display:flex;
   align-items: center;
   justify-content: center;
-}
-
-.arrow p {
-  margin: 0;
-  font-size: 24px;
-  color: #7D73FC;
-  padding: 120px 0px;
-  flex-direction: column;
-
+  color: #F5F5FF;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .work {
+  padding: 40px;
+}
+
+.work-title {
   display: flex;
   width: 327px;
   padding-left: 20px;
