@@ -246,14 +246,34 @@ textarea {
 
 textarea {
   height: 100px;
+  color: var(--theme-4-neutral-5, #81818C);
+font-size: 15px;
+font-family: Inter;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
 }
 
 input[type="submit"] {
   background: var(--theme-4-primary-2, #7D73FC);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 3px;
+  color: var(--theme-4-primary-4, #EDECFF);
+  text-align: center;
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+
+}
+
+.email{
+  color: var(--primary-b-50, #EBEBFF);
+text-align: center;
+font-size: 20px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
 }
  
