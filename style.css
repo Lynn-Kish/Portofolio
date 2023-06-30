@@ -247,11 +247,11 @@ textarea {
 textarea {
   height: 100px;
   color: var(--theme-4-neutral-5, #81818C);
-font-size: 15px;
-font-family: Inter;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
+  font-size: 15px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 input[type="submit"] {
@@ -264,6 +264,10 @@ input[type="submit"] {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.36px;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 10px;
 
 }
 
