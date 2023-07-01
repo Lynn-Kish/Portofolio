@@ -136,7 +136,7 @@ i {
   width: 327px;
   padding-left: 20px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   color: var(--theme-4-primary-3, #9490FF);
   font-size: 40px;
   font-family: Roboto;
@@ -149,21 +149,20 @@ i {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  text-align: center;
+  text-align:  flex-start;
 }
 
 .image img {
  width: 327px;
  height: 236px;
  padding: 20px;
- background: linear-gradient(0deg, #F9F9F9 0%, #F9F9F9 100%),
-  url(<path-to-image>), rgb(250, 230, 230) 50% / cover no-repeat;
+ background:#fff;
 }
 
 .text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:  flex-start;
   margin-top: 10px;
   font-family: roboto;
   color: #FFF;
@@ -175,11 +174,12 @@ i {
   font-family: roboto;
   color: #fff;
   margin: 30px auto;
-  border-radius: 5px;
+  border-radius:none;
   cursor: pointer;
   display: flex;
   padding: 12px;
-  align-items: flex-start;
+ justify-content:start;
+text-align:center;
   gap: 10px;
 }
 
@@ -266,7 +266,7 @@ input[type="submit"] {
   letter-spacing: 0.36px;
   display: flex;
   padding: 12px;
-  align-items: center;
+  align-items:start;
   gap: 10px;
 
 }
