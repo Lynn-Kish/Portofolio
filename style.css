@@ -28,6 +28,24 @@
     text-decoration: none;
   }
 
+  @media screen and (min-width: 768px) {
+    /* Desktop styles */
+    .line {
+      display: none;
+    }
+  }
+  
+  @media screen and  (max-width: 767px) {
+    /* Mobile styles */
+    .line {
+      display: block;
+      width: 100%;
+      background-color: #191765;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
 
 
   .main {
@@ -104,6 +122,20 @@ li {
   font-family: Roboto;
   text-align: start;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .skills__content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
   
 /* link's style */
 .link-list {
@@ -116,6 +148,18 @@ li {
 
 i {
   color: #F5F5FF;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .link-list {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  
+  .link-list > * {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 /* style for the arrow */
@@ -196,6 +240,8 @@ text-align:center;
     margin-top: 0;
   }
 }
+
+/* contacts */
 
 .contacts {
   padding: 20px;
