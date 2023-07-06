@@ -38,6 +38,7 @@
   
   .menu-text-desktop {
     font-size: 18px;
+    font-family: Roboto;
     color: #FFF;
     text-decoration: none;
     margin: 0 10px;
@@ -45,6 +46,7 @@
   
   .menu-text-desktop:hover {
     color: #7D73FC;
+    
   }
   
   .menu-text-desktop:first-child {
@@ -55,18 +57,6 @@
     margin-right: 0;
   }
   
-  @media only screen and (max-width: 768px) {
-    .menu-desktop {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 5px;
-    }
-    
-    .menu-text-desktop {
-      margin: 5px 0;
-    }
-  }  
-
   /* Style for the main heading */
   .main h1 {
     color: var(--theme-4-primary-2, #7D73FC);
@@ -305,3 +295,16 @@ font-weight: 400;
 line-height: 28px;
 }
 
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  .menu-desktop {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  
+  .menu-text-desktop {
+    margin: 5px 0;
+  }
+}  
