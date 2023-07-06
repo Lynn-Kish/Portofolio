@@ -29,32 +29,7 @@
   }
 
   .menu-desktop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #191765;
-  }
-  
-  .menu-text-desktop {
-    font-size: 18px;
-    font-family: Roboto;
-    color: #FFF;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .menu-text-desktop:hover {
-    color: #7D73FC;
-    
-  }
-  
-  .menu-text-desktop:first-child {
-    font-weight: bold;
-  }
-  
-  .menu-text-desktop:last-child {
-    margin-right: 0;
+    display: none;
   }
   
   /* Style for the main heading */
@@ -297,11 +272,23 @@ line-height: 28px;
 
 /* Media queries */
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
   .menu-desktop {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .menu-list-desktop {
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    padding: 5px;
+    justify-content: space-between;
+    width: 40%;
   }
   
   .menu-text-desktop {
