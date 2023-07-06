@@ -293,5 +293,55 @@ line-height: 28px;
   
   .menu-text-desktop {
     margin: 5px 0;
+    color: #FFF;
+   
+  }
+
+  .menu-text-desktop:hover {
+    color: #9490FF;
   }
 }  
+
+@media screen and (min-width: 768px) {
+  /* Responsive styles for the main heading */
+  .main h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  /* Responsive styles for the paragraph */
+  .main h3:not(:first-child) {
+    font-size: 24px;
+  }
+
+  .main p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Responsive styles for skills section */
+  .skills {
+    display: flex;
+    flex-direction:raw;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .skills__content {
+    width: 100%;
+  }
+
+  .skills__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .skills__content li {
+    font-size: 14px;
+  }
+}
+
