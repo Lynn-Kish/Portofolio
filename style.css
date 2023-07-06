@@ -126,6 +126,8 @@ i {
   margin-bottom: 40px;
 }
 
+/* style for the work section*/
+
 .work {
   padding: 40px;
 }
@@ -320,15 +322,12 @@ line-height: 28px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  /* Responsive styles for skills section */
+/* Responsive styles for skills section */
+@media screen and (min-width: 1024px) {
   .skills {
-    display: flex;
-    flex-direction:raw;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
-    gap: 16px;
-    padding: 20px;
+    justify-content: flex;
   }
 
   .skills__content {
@@ -336,12 +335,48 @@ line-height: 28px;
   }
 
   .skills__title {
-    margin-bottom: 20px;
     font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .skills__content li {
     font-size: 14px;
+  }
+}
+
+/* Responsive styles for work section */
+@media screen and (min-width: 769px) {
+  .work {
+    padding: 60px;
+  }
+
+  .work-title {
+    width: auto;
+    flex-direction: column-reverse;
+    padding-left: 0;
+    justify-content: flex-start;
+    text-align: start;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .text {
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  #see-project {
+    font-size: 20px;
   }
 }
 
