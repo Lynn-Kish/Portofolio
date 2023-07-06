@@ -35,19 +35,6 @@
     }
   }
   
-  @media screen and  (max-width: 767px) {
-    /* Mobile styles */
-    .line {
-      display: block;
-      width: 100%;
-      background-color: #191765;
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-  }
-
-
-
   .main {
     text-align: center;
     padding: 30px;
@@ -123,20 +110,6 @@ li {
   text-align: start;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .skills {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
-
-  .skills__content {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
-  
 /* link's style */
 .link-list {
   display: flex;
@@ -148,18 +121,6 @@ li {
 
 i {
   color: #F5F5FF;
-}
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .link-list {
-    flex-wrap: wrap;
-    width: 80%;
-  }
-  
-  .link-list > * {
-    width: 100%;
-    margin-bottom: 10px;
-  }
 }
 
 /* style for the arrow */
