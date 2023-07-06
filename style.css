@@ -28,6 +28,45 @@
     text-decoration: none;
   }
 
+  .menu-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #191765;
+  }
+  
+  .menu-text-desktop {
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .menu-text-desktop:hover {
+    color: #7D73FC;
+  }
+  
+  .menu-text-desktop:first-child {
+    font-weight: bold;
+  }
+  
+  .menu-text-desktop:last-child {
+    margin-right: 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .menu-desktop {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5px;
+    }
+    
+    .menu-text-desktop {
+      margin: 5px 0;
+    }
+  }  
+
   /* Style for the main heading */
   .main h1 {
     color: var(--theme-4-primary-2, #7D73FC);
