@@ -180,7 +180,7 @@ i {
   display: flex;
   padding: 12px;
  justify-content:start;
-text-align:center;
+  text-align:center;
   gap: 10px;
 }
 
@@ -290,7 +290,7 @@ line-height: 28px;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    width: 40%;
+    width: 20%;
   }
   
   .menu-text-desktop {
@@ -323,15 +323,17 @@ line-height: 28px;
 }
 
 /* Responsive styles for skills section */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
   .skills {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex;
   }
 
   .skills__content {
-    width: 100%;
+    float: none;
+    width: 20%;
   }
 
   .skills__title {
@@ -344,39 +346,4 @@ line-height: 28px;
   }
 }
 
-/* Responsive styles for work section */
-@media screen and (min-width: 769px) {
-  .work {
-    padding: 60px;
-  }
-
-  .work-title {
-    width: auto;
-    flex-direction: column-reverse;
-    padding-left: 0;
-    justify-content: flex-start;
-    text-align: start;
-    font-size: 48px;
-    line-height: 60px;
-  }
-
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .image img {
-    width: 100%;
-    height: auto;
-    padding: 30px;
-  }
-
-  .text {
-    align-items: flex-start;
-    margin-top: 20px;
-  }
-
-  #see-project {
-    font-size: 20px;
-  }
-}
 
