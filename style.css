@@ -393,7 +393,8 @@ line-height: 28px;
   }
 
   .contact{
-    display:ignored;
+    font-display: none;
+    content: "contact us";
   }
 
   .contacts p {
