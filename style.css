@@ -233,7 +233,8 @@ textarea {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 3px;
-  border: 1px solid #ccc;
+  border: none;
+  cursor: pointer;
 }
 
 textarea {
@@ -247,19 +248,19 @@ textarea {
 }
 
 input[type="submit"] {
+  justify-content: center;
   background: var(--theme-4-primary-2, #7D73FC);
+  padding: 12px;
+  align-items: center;
+  gap: 10px;
   color: var(--theme-4-primary-4, #EDECFF);
   text-align: center;
-  font-size: 12px;
   font-family: Roboto;
-  font-style: normal;
+  font-size: 12px;
+  font-style: center;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.36px;
-  display: flex;
-  padding: 12px;
-  align-items:start;
-  gap: 10px;
 
 }
 
@@ -376,5 +377,7 @@ line-height: 28px;
     padding: 16px;
   }
 }
+
+
 
 
