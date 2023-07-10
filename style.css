@@ -171,17 +171,18 @@ i {
 
 #see-project{
   background: var(--theme-4-primary-2, #7D73FC);
-  font-size: 18px;
-  font-family: roboto;
-  color: #fff;
-  margin: 30px auto;
-  border-radius:none;
-  cursor: pointer;
   display: flex;
   padding: 12px;
- justify-content:start;
-  text-align:center;
+  align-items: center;
   gap: 10px;
+  color: var(--theme-4-primary-4, #FFF);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.36px;
 }
 
 /* contacts */
@@ -319,6 +320,7 @@ line-height: 28px;
   .main p {
     font-size: 20px;
     margin-top: 20px;
+    padding: 20px;
   }
 }
 
@@ -343,6 +345,35 @@ line-height: 28px;
 
   .skills__content li {
     font-size: 14px;
+  }
+}
+
+/* Media Queries for work*/
+
+@media screen and  (min-width: 1200px) {
+  .work {
+    padding: 80px;
+  }
+
+  .work-title {
+    font-size: 30px;
+    line-height: 72px;
+  }
+
+  .image img {
+    width: 327px;
+  height: 236px;
+    padding: 40px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  #see-project {
+    
+    font-size: 24px;
+    padding: 16px;
   }
 }
 
