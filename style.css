@@ -213,6 +213,8 @@ i {
   line-height: 24px;
 }
 
+/* form */
+
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -233,7 +235,7 @@ textarea {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 3px;
-  border: none;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
 
@@ -378,6 +380,34 @@ line-height: 28px;
   }
 }
 
+/* Media Query for Big Screens  contacts*/
+@media (min-width: 1200px) {
+  .contacts {
+    padding: 40px;
+  }
+
+  .contact::before {
+    content: "Let's Chat!";
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact{
+    display:ignored;
+  }
+
+  .contacts p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 1199px) {
+  .contact::after {
+    content: "";
+  }
+}
 
 
 
