@@ -126,7 +126,7 @@ i {
   margin-bottom: 40px;
 }
 
-/* style for the work section*/
+/*** for work **/
 
 .work {
   padding: 40px;
@@ -134,55 +134,60 @@ i {
 
 .work-title {
   display: flex;
-  width: 327px;
-  padding-left: 20px;
-  flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   color: var(--theme-4-primary-3, #9490FF);
   font-size: 40px;
   font-family: Roboto;
   font-weight: 500;
   line-height: 52px;
+  margin-bottom: 20px;
 }
-
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-  text-align:  flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.image img {
- width: 327px;
- height: 236px;
- padding: 20px;
- background:#fff;
+.grid-container:nth-child(even) .text {
+  order: 2;
+}
+
+.image {
+  width: 327px;
+  height: 236px;
+  padding: 20px;
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
-  align-items:  flex-start;
-  margin-top: 10px;
-  font-family: roboto;
-  color: #FFF;
+  flex: 1;
+  padding: 20px;
+  color: #fff;
 }
 
-#see-project{
+.text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#see-project {
   background: var(--theme-4-primary-2, #7D73FC);
-  display: flex;
-  padding: 12px;
-  align-items: center;
-  gap: 10px;
-  color: var(--theme-4-primary-4, #FFF);
-  text-align: center;
+  font-size: 18px;
   font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.36px;
+  color: #fff;
+  padding: 12px;
+  border-radius: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  gap: 10px;
 }
 
 /* contacts */
@@ -351,34 +356,36 @@ line-height: 28px;
   }
 }
 
-/* Media Queries for work*/
 
-@media screen and  (min-width: 1200px) {
+/* Media Query for Big Screens */
+@media (min-width: 1200px) {
   .work {
-    padding: 80px;
+    padding: 60px;
   }
 
   .work-title {
-    font-size: 30px;
-    line-height: 72px;
+    font-size: 48px;
+    line-height: 60px;
   }
 
-  .image img {
-    width: 327px;
-  height: 236px;
-    padding: 40px;
+  .grid-container {
+    flex-direction: row;
+  }
+
+  .grid-container:nth-child(even) .text {
+    order: 0;
+  }
+
+  .image {
+    width: 40%;
+    height: auto;
   }
 
   .text {
-    font-size: 24px;
-  }
-
-  #see-project {
-    
-    font-size: 24px;
-    padding: 16px;
+    width: 60%;
   }
 }
+
 
 /* Media Query for Big Screens  contacts*/
 @media (min-width: 1200px) {
