@@ -11,7 +11,7 @@
     line-height: 1.6;
     background-color: #191765;
   }
-
+ /*
   .menu {
     display: flex;
     flex-direction: row;
@@ -31,7 +31,63 @@
   .menu-desktop {
     display: none;
   }
+  */
+
+  header{
+    background-color:  #191765 ;
+   }
   
+   li{
+    list-style: none;
+   }
+  
+   a{
+    text-decoration: none;
+    color: #fff;
+   }
+
+   .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+   }
+
+   .nav-menu{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    gap: 40px;
+   }
+
+   .nav-branding{
+    font-size: 2rem;
+   }
+
+   .nav-link{
+    transition: 0.7s ease;
+   }
+
+   .nav-link:hover{
+    color: #191765;
+   }
+   .hamburger{
+    display: none;
+    cursor:pointer;
+   }
+
+   .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition:  all 0.3s ease-in-out ;
+    background-color: #fff;
+    align-items: right;
+   }
+
   /* Style for the main heading */
   .main h1 {
     color: var(--theme-4-primary-2, #7D73FC);
@@ -283,33 +339,40 @@ line-height: 28px;
 
 /* Media queries */
 
-@media screen and (min-width: 768px) {
-  .menu {
-    display: none;
+/* Media queries for the Menu button */
+
+@media screen and (max-width: 768px) {
+  .hamburger{
+    display: block;
   }
-  .menu-desktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+  .hamburger .active .bar:btn-child(2){
+    display: block;
   }
-  .menu-list-desktop {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 20%;
+  .hamburger .active .bar:btn-child(1){
+    transform: translate(8px) rotate(45deg);
   }
-  
-  .menu-text-desktop {
-    margin: 5px 0;
-    color: #FFF;
-   
+  .hamburger .active .bar:btn-child(3){
+    transform: translate-(8px) rotate(-45deg);
   }
 
-  .menu-text-desktop:hover {
-    color: #9490FF;
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #191765;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    left:0;
   }
 }  
 
